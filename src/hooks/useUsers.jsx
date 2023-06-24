@@ -5,7 +5,7 @@ const useUsers = () => {
     const [loading, setLoading] = useState(true);
     const { data: allUsers = [],refetch} = useQuery(["allUsers"], async () => {
         const res = await fetch(
-          "http://localhost:5000/users"
+          "https://user-management-server-five.vercel.app/users"
         );
         setLoading(false)
         return res.json();

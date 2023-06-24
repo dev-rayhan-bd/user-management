@@ -13,7 +13,7 @@ const AddUser = () => {
   } = useForm();
   const onSubmit = (data) => {
     // console.log(data);
-    fetch("http://localhost:5000/addUsers", {
+    fetch("https://user-management-server-five.vercel.app/addUsers", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

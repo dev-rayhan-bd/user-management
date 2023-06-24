@@ -15,7 +15,7 @@ const [allUsers,loading]=useUsers();
 {loading? <div className="flex items-center justify-center h-32">
                 <FaSpinner className="animate-spin text-gray-500 text-4xl" />
             </div> :
-<div className="overflow-x-auto">
+<div className="overflow-x-auto mb-12">
  <table className="table container mx-auto w-1/2">
     {/* head */}
     <thead  className="font-bold text-xl bg-base-300">
